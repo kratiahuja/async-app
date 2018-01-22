@@ -1,0 +1,11 @@
+{{yield}}
+
+
+<button {{action "buttonFetch"}} class="fooButton">Click me!</button>
+
+{{#if fetchedButtonData}}
+  {{log 'rendering'}}
+  {{log fetchedButtonData}}
+  <p class="firstName">{{fetchedButtonData.first-name}}</p>
+  <p class="lastName">{{fetchedButtonData.last-name}}</p>
+{{/if}}
